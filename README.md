@@ -74,12 +74,6 @@ graph LR
 - **Async**: httpx, asyncio
 - **API**: Flask, JSON-RPC 2.0
 
-## 📋 Prerequisites
-
-- Python 3.8+
-- IBM watsonx account and credentials
-- Code Interpreter service (for BeeAI agent)
-
 ## 🔧 Installation
 
 1. **Clone the repository**
