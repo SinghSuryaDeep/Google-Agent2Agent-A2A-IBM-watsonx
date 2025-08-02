@@ -65,7 +65,7 @@ graph LR
 
 ## 🛠️ Technology Stack
 
-- **AI/LLM**: IBM WatsonX
+- **AI/LLM**: IBM watsonx
 - **Frameworks**: 
   - [Autogen](https://github.com/microsoft/autogen) - For conversational AI
   - [LangGraph](https://github.com/langchain-ai/langgraph) - For stateful workflows
