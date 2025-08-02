@@ -114,12 +114,6 @@ WATSONX_PROJECT_ID=your_project_id
 WATSONX_APIKEY=your_api_key
 WATSONX_MODEL=your_model_id
 
-# Code Interpreter (for Admin Agent)
-CODE_INTERPRETER_URL=http://127.0.0.1:50081
-CODE_INTERPRETER_SOURCE=./tmp/source
-CODE_INTERPRETER_TMPDIR=./tmp/target
-```
-
 ## 🚀 Running the System
 
 1. **Start all agent servers** (in separate terminals):
