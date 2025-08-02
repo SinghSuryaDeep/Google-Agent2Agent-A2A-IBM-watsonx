@@ -36,8 +36,11 @@ healthcare_a2a_multiagent/
 │   └── report_logic.py  # LangGraph-based generation
 │
 └── admin_agent/         # Appointment scheduling service
-    ├── server.py       # A2A-compliant REST API
-    └── admin_logic.py  # BeeAI-based scheduling
+│    ├── server.py       # A2A-compliant REST API
+│    └── admin_logic.py  # BeeAI-based scheduling
+│
+├── requirements.txt
+│── venv 
 ```
 
 ## 🚀 Workflow
