@@ -3,7 +3,7 @@ A distributed multi-agent system for healthcare workflow automation that follows
 
 
 
-# 🏥 Healthcare Multi-Agent System with A2A Protocol
+# 🏥 Healthcare Multi-Agent System with Google Agent2Agent(A2A) Protocol, IBM-watsonx and other Agentic Framework - Autogen, LangGraph, IBM BeeAI 
 
 A sophisticated multi-agent healthcare system that orchestrates AI agents to analyze patient data, generate medical reports, and schedule follow-up appointments using the A2A (Agent-to-Agent) protocol.
 
@@ -18,7 +18,7 @@ This project demonstrates a distributed multi-agent system for healthcare workfl
 
 ### 🎯 Key Features
 
-- **Protocol-Based Communication**: Full A2A v0.2 compliance with JSON-RPC 2.0
+- **Protocol-Based Communication**: Full A2A compliance with JSON-RPC 2.0
 - **Multi-Framework Integration**: Combines Autogen, LangGraph, and BeeAI frameworks
 - **Distributed Architecture**: Independently deployable microservices
 - **Healthcare Workflow Automation**: From diagnosis to appointment scheduling
@@ -61,9 +61,9 @@ graph LR
 
 | Agent | Port | Framework | Purpose |
 |-------|------|-----------|---------|
-| **Diagnostics** | 8001 | Autogen + WatsonX | Analyzes symptoms and vitals to provide diagnosis |
-| **Report** | 8002 | LangGraph + WatsonX | Generates structured medical reports |
-| **Admin** | 8003 | BeeAI + WatsonX | Schedules follow-up appointments |
+| **Diagnostics** | 8001 | Microsoft Autogen + IBM watsonx | Analyzes symptoms and vitals to provide diagnosis |
+| **Report** | 8002 | LangGraph + IBM watsonx | Generates structured medical reports |
+| **Admin** | 8003 | IBM Bee AI + IBM watsonx | Schedules follow-up appointments |
 
 ## 🛠️ Technology Stack
 
@@ -79,7 +79,7 @@ graph LR
 ## 📋 Prerequisites
 
 - Python 3.8+
-- IBM WatsonX account and credentials
+- IBM watsonx account and credentials
 - Code Interpreter service (for BeeAI agent)
 
 ## 🔧 Installation
@@ -204,27 +204,6 @@ pytest tests/
 python tests/integration_test.py
 ```
 
-### Manual Testing with cURL
-```bash
-# Discover agent capabilities
-curl http://localhost:8001/.well-known/agent.json
-
-# Invoke a skill
-curl -X POST http://localhost:8001/skills/analyze-patient-data \
-  -H "Content-Type: application/json" \
-  -d '{
-    "jsonrpc": "2.0",
-    "method": "invoke",
-    "params": {
-      "patient_data": {
-        "symptoms": ["headache", "fever"],
-        "vitals": {"temperature": "101F"}
-      }
-    },
-    "id": "123"
-  }'
-```
-
 ## 📈 Performance Considerations
 
 - **Async Operations**: Non-blocking I/O for better scalability
@@ -253,33 +232,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
-
-- IBM WatsonX team for the LLM infrastructure
-- Autogen, LangGraph, and BeeAI framework developers
-- A2A protocol specification contributors
-
-## 📚 Resources
-
-- [A2A Protocol Specification](https://github.com/a2a-protocol/a2a-spec)
-- [IBM WatsonX Documentation](https://www.ibm.com/docs/en/watsonx)
-- [Multi-Agent Systems Guide](https://www.example.com/multi-agent-guide)
-
-## 🚧 Roadmap
-
-- [ ] Add authentication mechanisms
-- [ ] Implement agent monitoring dashboard
-- [ ] Support for multiple LLM providers
-- [ ] Enhanced error recovery mechanisms
-- [ ] Kubernetes deployment manifests
-- [ ] Performance benchmarking suite
-
-## 🐛 Known Issues
-
-- Code Interpreter service must be running for Admin Agent
-- Requires stable internet connection for WatsonX API calls
-
----
 
 ## 👨‍💻 Author
 
@@ -314,5 +266,5 @@ Feel free to reach out on any of the platforms above!
 ---
 
 <p align="center">
-  Made with ❤️ by Surya Deep Singh
+  Made with by Surya Deep Singh
 </p>
