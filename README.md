@@ -74,7 +74,7 @@ graph TB
     
     %% Styling
     classDef agentBox fill:#e1f5fe,stroke:#0277bd,stroke-width:2px,color:#000
-    classDef dataBox fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#000
+    classDef dataBox fill:#fff9c4,stroke:#f57f17,stroke-width:2px,color:#000
     classDef processBox fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px,color:#000
     
     class B,D,F agentBox
