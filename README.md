@@ -19,7 +19,7 @@ This project demonstrates a distributed multi-agent system for healthcare workfl
 - **Healthcare Workflow Automation**: From diagnosis to appointment scheduling
 - **Real-time Processing**: Asynchronous operations with comprehensive error handling
 
-## 🏗️ Architecture
+## 🏗️ Folder Structure
 
 ```
 healthcare_a2a_multiagent/
