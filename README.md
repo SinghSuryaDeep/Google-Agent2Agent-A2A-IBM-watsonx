@@ -67,9 +67,9 @@ graph LR
 
 - **AI/LLM**: IBM watsonx
 - **Frameworks**: 
-  - [Autogen](https://github.com/microsoft/autogen) - For conversational AI
-  - [LangGraph](https://github.com/langchain-ai/langgraph) - For stateful workflows
-  - [BeeAI](https://github.com/i-am-bee/bee-agent-framework) - For ReAct agents
+  - [Autogen](https://github.com/microsoft/autogen)
+  - [LangGraph](https://github.com/langchain-ai/langgraph)
+  - [BeeAI](https://github.com/i-am-bee/bee-agent-framework)
 - **Protocol**: A2A v0.2 (Agent-to-Agent)
 - **Async**: httpx, asyncio
 - **API**: Flask, JSON-RPC 2.0
