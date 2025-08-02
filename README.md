@@ -3,9 +3,9 @@ A distributed multi-agent system for healthcare workflow automation that follows
 
 
 
-# 🏥 Healthcare Multi-Agent System with Google Agent2Agent(A2A) Protocol, IBM-watsonx and other Agentic Framework - Autogen, LangGraph, IBM BeeAI 
+# 🏥 Healthcare Multi-Agent System with Google Agent2Agent(A2A) Protocol, IBM-watsonx and Agentic Frameworks - Autogen, LangGraph, IBM BeeAI 
 
-A sophisticated multi-agent healthcare system that orchestrates AI agents to analyze patient data, generate medical reports, and schedule follow-up appointments using the A2A (Agent-to-Agent) protocol.
+A sophisticated multi-agent healthcare system that orchestrates AI agents to analyze patient data, generate medical reports, and schedule follow-up appointments using the A2A (Agent-to-Agent) protocol and IBM watsonx.
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![A2A Protocol](https://img.shields.io/badge/A2A-v0.2-green.svg)
@@ -14,7 +14,7 @@ A sophisticated multi-agent healthcare system that orchestrates AI agents to ana
 
 ## 🌟 Overview
 
-This project demonstrates a distributed multi-agent system for healthcare workflow automation following the A2A v0.2 protocol. The system seamlessly integrates three specialized AI agents powered by IBM WatsonX and various AI frameworks to create an end-to-end healthcare automation pipeline.
+This project demonstrates a distributed multi-agent system for healthcare workflow automation following the A2A protocol. The system seamlessly integrates three specialized AI agents powered by IBM watsonx and various AI frameworks to create an end-to-end healthcare automation pipeline.
 
 ### 🎯 Key Features
 
@@ -142,27 +142,8 @@ python client_agent/workflow_client.py
 
 ## 📊 Example Output
 
-```
-🩺 [Diagnostics] Result:
-   • Condition: Hypertension with possible cardiac involvement
-   • Risk Level: High
+![A2A Workflow Output](A2A.png)
 
-📄 [Report] Generated:
-   {
-     "Condition": "Hypertension with possible cardiac involvement",
-     "RiskLevel": "High",
-     "Recommendations": [
-       "Follow up in 2 weeks",
-       "Monitor vitals daily"
-     ]
-   }
-
-📅 [Admin] Appointment Scheduled:
-   • Date: 2025-08-09T22:33:29.424214Z
-   • Link: https://calendar.google.com/calendar/event?...
-
-✅ A2A Workflow completed successfully!
-```
 
 ## 🔌 A2A Protocol Implementation
 
@@ -190,18 +171,6 @@ Each agent exposes:
     }]
   }
 }
-```
-
-## 🧪 Testing
-
-### Unit Tests
-```bash
-pytest tests/
-```
-
-### Integration Test
-```bash
-python tests/integration_test.py
 ```
 
 ## 📈 Performance Considerations
