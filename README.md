@@ -45,15 +45,39 @@ healthcare_a2a_multiagent/
 
 ## 🚀 Workflow
 
-```mermaid
-graph LR
+graph TB
     A[Patient Data] --> B[Diagnostics Agent]
     B --> C[Diagnosis & Risk Level]
     C --> D[Report Agent]
     D --> E[Medical Report]
     E --> F[Admin Agent]
     F --> G[Scheduled Appointment]
-```
+    
+    %% Agent Detail Boxes
+    B --- B1["`**Diagnostics Agent**
+    Port: 8001
+    Framework: Microsoft Autogen + IBM watsonx
+    Purpose: Analyzes symptoms and vitals`"]
+    
+    D --- D1["`**Report Agent**
+    Port: 8002
+    Framework: LangGraph + IBM watsonx
+    Purpose: Generates structured medical reports`"]
+    
+    F --- F1["`**Admin Agent**
+    Port: 8003
+    Framework: IBM Bee AI + IBM watsonx
+    Purpose: Schedules follow-up appointments`"]
+    
+    %% Styling
+    classDef agentBox fill:#e1f5fe,stroke:#0277bd,stroke-width:2px,color:#000
+    classDef dataBox fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#000
+    classDef processBox fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px,color:#000
+    
+    class B,D,F agentBox
+    class A,C,E,G dataBox
+    class B1,D1,F1 processBox
+
 
 ### Agent Specifications
 
