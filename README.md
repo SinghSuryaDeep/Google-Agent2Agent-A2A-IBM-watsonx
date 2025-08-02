@@ -40,7 +40,7 @@ healthcare_a2a_multiagent/
 │    └── admin_logic.py  # BeeAI-based scheduling
 │
 ├── requirements.txt
-│── venv 
+└── venv 
 ```
 
 ## 🚀 Workflow
