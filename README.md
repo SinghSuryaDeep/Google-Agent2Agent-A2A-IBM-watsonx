@@ -45,7 +45,9 @@ healthcare_a2a_multiagent/
 
 ## 🚀 Workflow
 
-graph TB
+
+
+```graph TB
     A[Patient Data] --> B[Diagnostics Agent]
     B --> C[Diagnosis & Risk Level]
     C --> D[Report Agent]
@@ -77,6 +79,7 @@ graph TB
     class B,D,F agentBox
     class A,C,E,G dataBox
     class B1,D1,F1 processBox
+```
 
 
 ### Agent Specifications
