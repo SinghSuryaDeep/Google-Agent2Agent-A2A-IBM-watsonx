@@ -47,7 +47,7 @@ healthcare_a2a_multiagent/
 
 
 
-```
+```mermaid
 graph TB
     A[Patient Data] --> B[Diagnostics Agent]
     B --> C[Diagnosis & Risk Level]
