@@ -108,7 +108,7 @@ WATSONX_URL=your_watsonx_url
 WATSONX_PROJECT_ID=your_project_id
 WATSONX_APIKEY=your_api_key
 WATSONX_MODEL=your_model_id
-
+```
 ## 🚀 Running the System
 
 1. **Start all agent servers** (in separate terminals):
